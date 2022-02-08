@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aXus Gaming</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="shortcut icon" href="../assets/images/logo3.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/3cd4d2661f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--Contenedor del Layout-->
+    <div class="container">
+      <!--Header con logo principal-->
+      <header>
+        <h1 class="logo">
+          <a href="../index.html" title="aXus Gaming">
+            <img src="../assets/images/logo.png" alt="Logo" />
+          </a>
+        </h1>
+      </header>
+      <!--Barra de navegación-->
+      <nav>
+        <ul class="nav__list">
+          <input type="search" name="product-search" placeholder="Buscar productos" />
+          <li class="nav__list__item"><a href="../index.html">Inicio</a></li>
+          <li class="nav__list__item"><a href="hardware.html">Hardware</a></li>
+          <li class="nav__list__item"><a href="perifericos.html">Periféricos</a></li>
+          <li class="nav__list__item"><a href="ayuda.html">Ayuda</a></li>
+          <li class="nav__list__item"><a href="nosotros.html">Nosotros</a></li>
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </ul>
+      </nav>
+      <!--Slider (Sin terminar)-->
+      <section class="slider">
+        <ul class="slider__ul">
+          <li><img src="../assets/images/main2.jpg" alt="Portada2" /></li>
+          <li><img src="../assets/images/main1.jpg" alt="Portada" /></li>
+          <li><img src="../assets/images/main3.jpg" alt="Portada3" /></li>
+        </ul>
+      </section>
+      <!--Sección principal-->
+      <section class="main">
+        <!--Título principal de sección-->
+        <h2 class="info-title">Información</h2>
+        <!--Información sobre nosotros-->
+        <div class="info">
+          <div class="info-boxes">
+            <div class="info-box">
+              <h3 class="info-box__h3">Dirección</h3>
+              <p class="info-box__p">Charcas 1020</p>
+              <p class="info-box__p">Buenos Aires, Argentina</p>
+              <p class="info-box__p info-box__p--modifier">Tel: (54 11) 52799725</p>
+            </div>
+            <div class="info-box">
+              <h3 class="info-box__h3">Atención al cliente</h3>
+              <a href="mailto:tienda@axus.com.ar" class="info-box__a">tienda@axus.com.ar</a>
+            </div>
+            <div class="info-box">
+              <h3 class="info-box__h3">Horarios</h3>
+              <p class="info-box__p">Lunes a Viernes de <span class="time">8:00 a 20:00hs</span></p>
+              <p class="info-box__p">Sábados de <span class="time">10:00 a 16:00hs</span></p>
+            </div>
+          </div>
+          <!--Mapa de ubicación-->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1953.0810031941733!2d-58.41950246009376!3d-34.58702269315029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb580208cd68b%3A0x1dcd3c8b76192334!2sCharcas%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1643832860099!5m2!1ses-419!2sar"
+            class="map"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+      <!--Footer con información de contacto y copyright-->
+      <footer>
+        <div class="footer__social">
+          <p class="footer__social__p">Seguinos en nuestras redes</p>
+          <ul class="footer__social__ul">
+            <li class="footer__social__ul__item">
+              <a href="https://www.facebook.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="footer__social__ul__item">
+              <a href="https://www.instagram.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="footer__social__ul__item">
+              <a href="https://www.youtube.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">aXus Gaming 2022 - Todos los derechos reservados</p>
+      </footer>
+   </div>
+  </body>
+</html>

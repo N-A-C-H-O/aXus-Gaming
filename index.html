@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aXus Gaming</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" href="assets/images/logo3.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/3cd4d2661f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--Contenedor del Layout-->
+    <div class="container">
+      <!--Header con logo principal-->
+      <header>
+        <h1 class="logo">
+          <a href="index.html" title="aXus Gaming">
+            <img src="assets/images/logo.png" alt="Logo" />
+          </a>
+        </h1>
+      </header>
+      <!--Barra de navegación-->
+      <nav>
+        <ul class="nav__list">
+          <input type="search" name="product-search" placeholder="Buscar productos" />
+          <li class="nav__list__item"><a href="index.html">Inicio</a></li>
+          <li class="nav__list__item"><a href="pages/hardware.html">Hardware</a></li>
+          <li class="nav__list__item"><a href="pages/perifericos.html">Periféricos</a></li>
+          <li class="nav__list__item"><a href="pages/ayuda.html">Ayuda</a></li>
+          <li class="nav__list__item"><a href="pages/nosotros.html">Nosotros</a></li>
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </ul>
+      </nav>
+      <!--Slider (Sin terminar)-->
+      <section class="slider">
+        <ul class="slider__ul">
+          <li><img src="assets/images/main1.jpg" alt="Portada" /></li>
+          <li><img src="assets/images/main2.jpg" alt="Portada2" /></li>
+          <li><img src="assets/images/main3.jpg" alt="Portada3" /></li>
+        </ul>
+      </section>
+      <!--Sección principal-->
+      <section class="main">
+        <!--Título principal de sección-->
+        <div class="main-title">
+          <h2>Productos</h2>
+        </div>
+        <!--Cajas de productos con imagen, nombre, precio y botón del carrito-->
+        <div class="main-products">
+          <div class="main-product">
+            <img class="main-product__img" src="assets/images/mother1.jpg" alt="Mother" />
+            <p class="main-product__name">Asus ROG Strix B460-F Gaming Motherboard</p>
+            <p class="main-product__price">$250</p>
+            <button class="btn">Agregar</button>
+          </div>
+          <div class="main-product">
+            <img class="main-product__img" src="assets/images/cpu1.jpg" alt="Procesador" />
+            <p class="main-product__name">Intel i3-10100F 3.60Ghz Processor</p>
+            <p class="main-product__price">$300</p>
+            <button class="btn">Agregar</button>
+          </div>
+          <div class="main-product">
+            <img class="main-product__img" src="assets/images/gpu1.jpg" alt="Placa de video" />
+            <p class="main-product__name">Powercolor RX 6900XT 16GB OC Graphic Card</p>
+            <p class="main-product__price">$300</p>
+            <button class="btn">Agregar</button>
+          </div>
+          <div class="main-product">
+            <img class="main-product__img" src="assets/images/ram1.jpg" alt="Memoria RAM" />
+            <p class="main-product__name">Kingston KF432C16BBAK2/16 2x8GB DDR4 3200Mhz Memory RAM</p>
+            <p class="main-product__price">$300</p>
+            <button class="btn">Agregar</button>
+          </div>
+          <div class="main-product">
+            <img class="main-product__img" src="assets/images/kbd1.jpg" alt="Teclado" />
+            <p class="main-product__name">HyperX Alloy Origins RGB Keyboard</p>
+            <p class="main-product__price">$300</p>
+            <button class="btn">Agregar</button>
+          </div>
+          <div class="main-product">
+            <img class="main-product__img" src="assets/images/mouse1.jpg" alt="Mouse" />
+            <p class="main-product__name">XTRFY M4 RGB Retro Mouse</p>
+            <p class="main-product__price">$300</p>
+            <button class="btn">Agregar</button>
+          </div>
+        </div>
+      </section>
+      <!--Footer con información de contacto y copyright-->
+      <footer>
+        <div class="footer__social">
+          <p class="footer__social__p">Seguinos en nuestras redes</p>
+          <ul class="footer__social__ul">
+            <li class="footer__social__ul__item">
+              <a href="https://www.facebook.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="footer__social__ul__item">
+              <a href="https://www.instagram.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="footer__social__ul__item">
+              <a href="https://www.youtube.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">aXus Gaming 2022 - Todos los derechos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>
