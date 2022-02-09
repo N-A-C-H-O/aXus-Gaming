@@ -7,14 +7,19 @@
     <title>aXus Gaming</title>
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="shortcut icon" href="../assets/images/logo3.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/3cd4d2661f.js" crossorigin="anonymous"></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </head>
   <body>
     <!--Contenedor del Layout-->
     <div class="container">
       <!--Header con logo principal-->
       <header>
-        <h1 class="logo">
+        <h1 class="logo wow animate__animated animate__bounceIn">
           <a href="../index.html" title="aXus Gaming">
             <img src="../assets/images/logo.png" alt="Logo" />
           </a>
@@ -23,14 +28,14 @@
       <!--Barra de navegación-->
       <nav>
         <ul class="nav__list">
-          <input type="search" name="product-search" placeholder="Buscar productos" />
+          <input type="search" name="product-search" placeholder="Buscar productos" class="wow animate__animated animate__bounceInLeft" />
           <li class="nav__list__item"><a href="../index.html">Inicio</a></li>
           <li class="nav__list__item"><a href="hardware.html">Hardware</a></li>
           <li class="nav__list__item"><a href="perifericos.html">Periféricos</a></li>
-          <li class="nav__list__item"><a href="ayuda.html">Ayuda</a></li>
+          <li class="nav__list__item"><a href="ayuda.html" class="active">Ayuda</a></li>
           <li class="nav__list__item"><a href="nosotros.html">Nosotros</a></li>
           <i class="fas fa-bars"></i>
-          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-shopping-cart wow animate__animated animate__tada"></i>
         </ul>
       </nav>
       <!--Slider (Sin terminar)-->
@@ -46,7 +51,7 @@
         <!--Sección de preguntas frecuentes-->
         <div class="frecuent">
           <!--Título principal de la sección-->
-          <h2 class="frecuent-title">Preguntas Frecuentes</h2>
+          <h2 class="frecuent-title wow animate__animated animate__pulse">Preguntas Frecuentes</h2>
           <div class="frecuent-questions">
             <!--Preguntas frecuentes y respuestas-->
             <section class="frecuent-question">
@@ -66,7 +71,7 @@
         </div>
         <div class="form-box">
           <!--Título principal de la sección-->
-          <h2 class="form-title">¿En qué te ayudamos?</h2>
+          <h2 class="form-title wow animate__animated animate__pulse">¿En qué te ayudamos?</h2>
           <form>
             <input type="text" placeholder="Nombre" required />
             <input type="email" placeholder="Correo electrónico" required /> <br />
@@ -82,13 +87,13 @@
           <p class="footer__social__p">Seguinos en nuestras redes</p>
           <ul class="footer__social__ul">
             <li class="footer__social__ul__item">
-              <a href="https://www.facebook.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-facebook wow animate__animated animate__rotateIn"></i></a>
             </li>
             <li class="footer__social__ul__item">
-              <a href="https://www.instagram.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-instagram wow animate__animated animate__rotateIn"></i></a>
             </li>
             <li class="footer__social__ul__item">
-              <a href="https://www.youtube.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.youtube.com" target="_blank" class="footer__social__ul__item__a"><i class="fab fa-youtube wow animate__animated animate__rotateIn"></i></a>
             </li>
           </ul>
         </div>

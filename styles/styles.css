@@ -73,6 +73,10 @@ nav {
   display: none;
 }
 
+.nav__list .active {
+  color: black;
+}
+
 .nav__list li a {
   color: white;
   text-decoration: none;
@@ -81,6 +85,14 @@ nav {
 
 .nav__list i {
   font-size: 1.3em;
+}
+
+.fa-shopping-cart {
+  cursor: pointer;
+}
+
+.fa-shopping-cart:hover {
+  color: white;
 }
 
 input[type="search"] {
@@ -170,6 +182,11 @@ input[type="search"]:focus {
   cursor: pointer;
 }
 
+
+.btn:hover {
+  background-color: #d12d14;
+}
+
 /*Preguntas frecuentes*/
 
 .frecuent-title {
@@ -192,6 +209,7 @@ input[type="search"]:focus {
 .frecuent-question__h3 {
   padding: 10px;
   font-size: 1em;
+  cursor: pointer;
 }
 
 .frecuent-question__p {
@@ -232,6 +250,36 @@ textarea {
   min-height: 200px;
   resize: none;
   font-size: 1.1em;
+}
+
+input:not(input[type="submit"], input[type="reset"]):focus {
+  background-color: rgb(42, 42, 42);
+  color: white;
+  border-color: white;
+}
+
+textarea:focus {
+  background-color: rgb(42, 42, 42);
+  color: white;
+  border-color: white;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #fe3919;
+  color: white;
+}
+
+input[type="reset"] {
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #fe3919;
+  color: white;
 }
 
 /*Contacto*/
