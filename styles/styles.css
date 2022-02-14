@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* 'Roboto', sans-serif; */
 
-/*Reset*/
+/*Reset
 
 * {
   margin: 0;
@@ -11,20 +11,22 @@
   vertical-align: baseline;
   background: transparent;
 }
+*/
 
 body {
-  line-height: 1;
-  font-family: "Roboto", sans-serif;
+  line-height: 1 ;
+  font-family: "Roboto", sans-serif !important;
 }
 
+/*
 ol,
 ul {
   list-style: none;
 }
 
-/*Fin reset*/
+Fin reset*/
 
-/*Contenedor principal del layout*/
+/*Contenedor principal del layout
 
 .container {
   display: grid;
@@ -36,15 +38,18 @@ ul {
   margin: 15px auto;
   grid-row-gap: 10px;
 }
+*/
 
 /*Header*/
 
+/*
 header {
   grid-area: header;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+*/
 
 .logo {
   width: 50%;
@@ -54,7 +59,7 @@ header {
   width: 100%;
 }
 
-/*Nav*/
+/*Nav
 
 nav {
   grid-area: nav;
@@ -69,9 +74,11 @@ nav {
   align-items: center;
 }
 
+
 .nav__list li {
   display: none;
 }
+
 
 .nav__list .active {
   color: black;
@@ -107,9 +114,10 @@ input[type="search"]:focus {
   outline: 2px solid rgb(250, 250, 250);
   background-color: black;
   color: white;
-}
+}*/
 
-/*Slider*/
+
+/*Slider
 
 .slider {
   grid-area: slider;
@@ -118,8 +126,9 @@ input[type="search"]:focus {
 .slider img {
   width: 100%;
 }
+*/
 
-/*Main*/
+/*Main
 
 .main {
   grid-area: main;
@@ -186,8 +195,9 @@ input[type="search"]:focus {
 .btn:hover {
   background-color: #d12d14;
 }
+*/
 
-/*Preguntas frecuentes*/
+/*Preguntas frecuentes
 
 .frecuent-title {
   text-align: center;
@@ -281,8 +291,9 @@ input[type="reset"]:hover {
   background-color: #fe3919;
   color: white;
 }
+*/
 
-/*Contacto*/
+/*Contacto
 
 .info {
   display: grid;
@@ -319,22 +330,28 @@ input[type="reset"]:hover {
 .info-box__p--modifier {
   font-weight: bold;
 }
+*/
 
 .time {
   font-weight: bold;
 }
 
+
 .info-box__a {
   text-decoration: none;
   color: #fe3919;
-  padding: 10px;
-  margin-left: 5px;
 }
 
-/*Footer*/
+/*
+
+/*Footer
 
 footer {
   grid-area: footer;
+}
+
+
+footer {
   margin-top: 100px;
 }
 
@@ -346,7 +363,7 @@ footer {
   text-align: center;
   padding-top: 10px;
   color: white;
-  font-size: 1.2em;
+  font-size:;
 }
 
 .footer__social__ul {
@@ -369,12 +386,15 @@ footer {
   text-align: center;
   padding: 10px;
 }
+*/
 
 /*Responsive*/
 
 /*Estilos para resolución a partir de 768px (Tablet)*/
 
 @media screen and (min-width: 768px) {
+  
+  /*
   .nav__list {
     font-size: 1.5em;
     height: 80px;
@@ -429,15 +449,22 @@ footer {
   .info-box__p {
     font-size: 1.1em;
   }
+  */
+
+  .info-box {
+    text-align: center;
+  }
+
 }
+
 
 /*Estilos para resolución a partir de 1024px (Desktop)*/
 
 @media screen and (min-width: 1024px) {
   .logo {
-    width: 25%;
+    width: 35%;
   }
-
+/*
   .nav__list {
     justify-content: space-evenly;
   }
@@ -506,4 +533,75 @@ footer {
     max-width: 98%;
     min-height: 350px;
   }
+  */
+
+  .info-box {
+    text-align: center;
+  }
+
+  .card-title {
+    display: none;
+  }
+
+  .card:hover .card-title {
+    display: block;
+  }
+
+}
+
+
+/*Re-style BOOSTRAP*/
+
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.nav-link {
+  text-transform: uppercase;
+  color: white;
+}
+
+.dropdown-item:focus {
+  background-color: #fe3919;
+}
+
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #fe3919;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #dd3117;
+}
+
+.btn-primary:focus {
+  background-color: #dd3117;
+}
+
+.accordion-item {
+  background-color: #dd3117;
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: white;
+  color: #000;
+}
+
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #000;
 }
