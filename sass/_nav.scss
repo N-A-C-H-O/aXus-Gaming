@@ -1,0 +1,27 @@
+/*Navbar*/
+nav {
+  .container-fluid {
+    .navbar-toggler {
+      color: $color-three;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    div {
+      ul {
+        li {
+          .nav-link {
+            text-transform: uppercase;
+          }
+          .dropdown-menu {
+            .dropdown-item:focus {
+              background-color: $color-first;
+            }
+          }
+        }
+      }
+    }
+  }
+}

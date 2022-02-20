@@ -1,0 +1,30 @@
+/*Responsive*/
+@media screen and (min-width: 768px) {
+  section {
+    .info-boxes {
+      .info-box {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    .logo {
+      width: 35%;
+    }
+  }
+  section {
+    .container-fluid {
+      .card {
+        .card-title {
+          display: none;
+        }
+        &:hover .card-title {
+          display: block;
+        }
+      }
+    }
+  }
+}

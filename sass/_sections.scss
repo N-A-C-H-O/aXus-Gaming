@@ -1,0 +1,51 @@
+/*Section*/
+section {
+  .btn {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn-primary {
+    background-color: $color-first;
+    border: none;
+    &:hover {
+      background-color: $color-four;
+    }
+    &:focus {
+      background-color: $color-four;
+    }
+  }
+  .accordion {
+    .accordion-item {
+      background-color: $color-four;
+      color: $color-three;
+      .accordion-button {
+        &:focus {
+          box-shadow: none;
+          background-color: $color-three;
+          color: $color-two;
+        }
+      }
+    }
+  }
+  form {
+    .form-control {
+      &:focus {
+        box-shadow: none;
+        border-color: $color-two;
+      }
+    }
+  }
+  .info-box {
+    a:focus {
+      text-decoration: none;
+      color: $color-first;
+    }
+
+    p {
+      .time {
+        font-weight: bold;
+      }
+    }
+  }
+}

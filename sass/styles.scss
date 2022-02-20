@@ -1,0 +1,21 @@
+@import "variables";
+@import "header";
+@import "nav";
+@import "sections";
+@import "devices";
+
+body {
+  font-family: $font !important;
+  line-height: 1;
+}
+
+.float {
+  .float__a {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    z-index: 100;
+  }
+}
