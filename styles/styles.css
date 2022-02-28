@@ -1,3 +1,5 @@
+/*'Roboto', sans-serif*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /*Header*/
 header .logo {
   width: 50%;
@@ -9,13 +11,11 @@ header .logo img {
 
 /*Navbar*/
 nav .container-fluid .navbar-toggler {
-  color: #fff;
+  color: #dd3117;
 }
 
 nav .container-fluid .navbar-toggler:focus {
   outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 nav .container-fluid div ul li .nav-link {
@@ -27,7 +27,7 @@ nav .container-fluid div ul li .dropdown-menu .dropdown-item:focus {
 }
 
 /*Section*/
-section .btn:focus {
+section .btn:focus, section nav .container-fluid .navbar-toggler:focus, nav .container-fluid section .navbar-toggler:focus, section .accordion .accordion-item .accordion-button:focus, section form .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -51,15 +51,11 @@ section .accordion .accordion-item {
 }
 
 section .accordion .accordion-item .accordion-button:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
   background-color: #fff;
   color: #000;
 }
 
 section form .form-control:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
   border-color: #000;
 }
 
@@ -92,7 +88,7 @@ section .info-box p .time {
 }
 
 body {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Roboto", sans-serif;
   line-height: 1;
 }
 
@@ -101,7 +97,7 @@ body {
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #25d366;
+  background-color: #2ab45c;
   z-index: 100;
 }
 /*# sourceMappingURL=styles.css.map */

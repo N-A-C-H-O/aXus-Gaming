@@ -1,5 +1,13 @@
-$color-first: #fe3919;
 $font: "Roboto", sans-serif;
-$color-two: #000;
-$color-three: #fff;
-$color-four: #dd3117;
+$colors: (
+  one: #fe3919,
+  two: #000,
+  three: #fff,
+  four: #dd3117,
+);
+
+
+@mixin reset {
+  font-family: $font;
+  line-height: 1;
+}

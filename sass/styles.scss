@@ -1,12 +1,13 @@
 @import "variables";
+/*'Roboto', sans-serif*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "header";
 @import "nav";
 @import "sections";
 @import "devices";
 
 body {
-  font-family: $font !important;
-  line-height: 1;
+  @include reset;
 }
 
 .float {
@@ -15,7 +16,7 @@ body {
     height: 60px;
     bottom: 40px;
     right: 40px;
-    background-color: #25d366;
+    background-color: #2ab45c;
     z-index: 100;
   }
 }

@@ -6,24 +6,24 @@ section {
     }
   }
   .btn-primary {
-    background-color: $color-first;
+    background-color: map-get($colors,one);
     border: none;
     &:hover {
-      background-color: $color-four;
+      background-color: map-get($colors,four);
     }
     &:focus {
-      background-color: $color-four;
+      background-color: map-get($colors,four);
     }
   }
   .accordion {
     .accordion-item {
-      background-color: $color-four;
-      color: $color-three;
+      background-color: map-get($colors,four);
+      color: map-get($colors,three);
       .accordion-button {
         &:focus {
-          box-shadow: none;
-          background-color: $color-three;
-          color: $color-two;
+          @extend .btn:focus;
+          background-color: map-get($colors,three);
+          color: map-get($colors,two);
         }
       }
     }
@@ -31,15 +31,15 @@ section {
   form {
     .form-control {
       &:focus {
-        box-shadow: none;
-        border-color: $color-two;
+        @extend .btn:focus;
+        border-color: map-get($colors,two);
       }
     }
   }
   .info-box {
     a:focus {
       text-decoration: none;
-      color: $color-first;
+      color: map-get($colors,one);
     }
 
     p {
