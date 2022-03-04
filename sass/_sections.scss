@@ -37,7 +37,7 @@ section {
     }
   }
   .info-box {
-    a:focus {
+    a {
       text-decoration: none;
       color: map-get($colors,one);
     }

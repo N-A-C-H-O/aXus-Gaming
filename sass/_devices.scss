@@ -1,5 +1,9 @@
 /*Responsive*/
 @media screen and (min-width: 768px) {
+  header {
+    margin-bottom: 4em;
+    margin-top: 4em;
+  }
   section {
     .info-boxes {
       .info-box {
@@ -9,6 +13,8 @@
   }
 }
 
+
+
 @media screen and (min-width: 1024px) {
   header {
     .logo {
@@ -16,13 +22,28 @@
     }
   }
   section {
+    .products-content {
+      h3 {
+        margin-left: 3.5em;
+      }
+      .card {
+        transition: transform 2s;
+        &:hover {
+          outline: 1px solid map-get($colors,one);
+          border-radius: 9px;
+          transform: scale(1.1);
+          box-shadow: 0 0 11px rgba(33,33,33,.2);
+        }
+      }
+    }
     .container-fluid {
       .card {
         .card-title {
-          display: none;
+          opacity: 0;
+          transition: 0.6s;
         }
         &:hover .card-title {
-          display: block;
+          opacity: 1;
         }
       }
     }

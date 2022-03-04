@@ -1,6 +1,11 @@
 /*'Roboto', sans-serif*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /*Header*/
+header {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 header .logo {
   width: 50%;
 }
@@ -59,7 +64,7 @@ section form .form-control:focus {
   border-color: #000;
 }
 
-section .info-box a:focus {
+section .info-box a {
   text-decoration: none;
   color: #fe3919;
 }
@@ -70,6 +75,10 @@ section .info-box p .time {
 
 /*Responsive*/
 @media screen and (min-width: 768px) {
+  header {
+    margin-bottom: 4em;
+    margin-top: 4em;
+  }
   section .info-boxes .info-box {
     text-align: center;
   }
@@ -79,11 +88,30 @@ section .info-box p .time {
   header .logo {
     width: 35%;
   }
+  section .products-content h3 {
+    margin-left: 3.5em;
+  }
+  section .products-content .card {
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
+  }
+  section .products-content .card:hover {
+    outline: 1px solid #fe3919;
+    border-radius: 9px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+            box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
   section .container-fluid .card .card-title {
-    display: none;
+    opacity: 0;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
   }
   section .container-fluid .card:hover .card-title {
-    display: block;
+    opacity: 1;
   }
 }
 
@@ -99,5 +127,37 @@ body {
   right: 40px;
   background-color: #2ab45c;
   z-index: 100;
+}
+
+.not-found .container-fluid {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fe3919;
+}
+
+.not-found .container-fluid h2 {
+  font-size: 1.5em;
+}
+
+.not-found .container-fluid h1 {
+  font-size: 10em;
+  margin: 0;
+  background: center no-repeat radial-gradient(circle, #fe3919 6%, #fe8774 19%, #fe3919 28%, white 91%, white 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.not-found .container-fluid p {
+  font-size: 1.5em;
+}
+
+.not-found .container-fluid a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #fe3919;
+  display: inline-block;
+  padding: 0.8em;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
