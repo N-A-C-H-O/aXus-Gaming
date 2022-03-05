@@ -1,6 +1,6 @@
 @import "variables";
 /*'Roboto', sans-serif*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "header";
 @import "nav";
 @import "sections";
@@ -25,14 +25,14 @@ body {
   .container-fluid {
     top: 50%;
     transform: translateY(-50%);
-    color: map-get($colors,one);
+    color: map-get($colors, one);
     h2 {
       font-size: 1.5em;
     }
     h1 {
       font-size: 10em;
       margin: 0;
-      background: center no-repeat radial-gradient(circle, rgba(254,57,25,1) 6%, rgba(254,135,116,1) 19%, rgba(254,57,25,1) 28%, rgba(255,255,255,1) 91%, rgba(255,255,255,1) 100%);
+      background: center no-repeat radial-gradient(circle, rgba(254, 57, 25, 1) 6%, rgba(254, 135, 116, 1) 19%, rgba(254, 57, 25, 1) 28%, rgba(255, 255, 255, 1) 91%, rgba(255, 255, 255, 1) 100%);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
     }
@@ -41,12 +41,11 @@ body {
     }
     a {
       text-decoration: none;
-      color: map-get($colors,three);
-      background-color: map-get($colors,one);
+      color: map-get($colors, three);
+      background-color: map-get($colors, one);
       display: inline-block;
       padding: 0.8em;
       border-radius: 10px;
     }
-    
   }
 }

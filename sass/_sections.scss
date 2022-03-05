@@ -6,24 +6,24 @@ section {
     }
   }
   .btn-primary {
-    background-color: map-get($colors,one);
+    background-color: map-get($colors, one);
     border: none;
     &:hover {
-      background-color: map-get($colors,four);
+      background-color: map-get($colors, four);
     }
     &:focus {
-      background-color: map-get($colors,four);
+      background-color: map-get($colors, four);
     }
   }
   .accordion {
     .accordion-item {
-      background-color: map-get($colors,four);
-      color: map-get($colors,three);
+      background-color: map-get($colors, four);
+      color: map-get($colors, three);
       .accordion-button {
         &:focus {
           @extend .btn:focus;
-          background-color: map-get($colors,three);
-          color: map-get($colors,two);
+          background-color: map-get($colors, three);
+          color: map-get($colors, two);
         }
       }
     }
@@ -32,14 +32,14 @@ section {
     .form-control {
       &:focus {
         @extend .btn:focus;
-        border-color: map-get($colors,two);
+        border-color: map-get($colors, two);
       }
     }
   }
   .info-box {
     a {
       text-decoration: none;
-      color: map-get($colors,one);
+      color: map-get($colors, one);
     }
 
     p {

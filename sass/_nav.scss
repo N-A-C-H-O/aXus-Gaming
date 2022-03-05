@@ -2,7 +2,7 @@
 nav {
   .container-fluid {
     .navbar-toggler {
-      color: map-get($colors,four);
+      color: map-get($colors, four);
       &:focus {
         outline: none;
         @extend .btn:focus;
@@ -17,7 +17,7 @@ nav {
           }
           .dropdown-menu {
             .dropdown-item:focus {
-              background-color: map-get($colors,one);
+              background-color: map-get($colors, one);
             }
           }
         }
